@@ -1,4 +1,7 @@
 # TODO: Feature 1
+from src.repositories import movie_repository as movie_r
+from app import app
+
 def test_list_all_movies_page():
     test_app = app.test_client()
     movie_repository = movie_r.get_movie_repository()
